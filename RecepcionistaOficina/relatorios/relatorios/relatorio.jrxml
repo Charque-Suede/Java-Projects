@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fb420640-b83d-4fa5-8000-8b37833388b5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="telefone" class="java.lang.String"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="marca de carro" class="java.lang.String"/>
+	<field name="modelo do carro" class="java.lang.String"/>
+	<field name="data de entrega" class="java.lang.String"/>
+	<field name="data de devolução" class="java.lang.String"/>
+	<field name="mecanico responsavel" class="java.lang.String"/>
+	<field name="servico" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="193" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="44e9a8ce-d3fb-479e-bfad-df63fc1a3ea4"/>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="87c44265-c2d2-4246-8136-465f8980df59"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="d56554e3-505d-47c4-b00f-ba203326c32d"/>
+				<text><![CDATA[Telefone: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="20" width="100" height="20" uuid="1b194c22-0365-4978-b747-21872009398a"/>
+				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="d8eb909b-59fd-40f0-a6e6-f04fce0941f8"/>
+				<text><![CDATA[Marca de Carro]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="40" width="100" height="20" uuid="07359468-61c5-493a-8c52-af47812c6c80"/>
+				<textFieldExpression><![CDATA[$F{marcaDeCarro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" uuid="08a4b315-2d5c-4b89-8d90-00023c2c81b2"/>
+				<text><![CDATA[Modelo do Carro: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="60" width="100" height="20" uuid="0213e6ab-a7bc-4077-b1b5-73b362f79af0"/>
+				<textFieldExpression><![CDATA[$F{modeloDoCarro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="100" height="20" uuid="a7d6e11e-c885-473f-93b5-776ab3855864"/>
+				<text><![CDATA[Mecanico responsavel]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="80" width="129" height="20" uuid="384aae17-d70c-460c-9ed6-39a584797abf"/>
+				<textFieldExpression><![CDATA[$F{mecanicoResponsavel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="100" width="100" height="20" uuid="376bb4e0-96f3-48ff-bc96-453283929515"/>
+				<text><![CDATA[servico]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="100" width="100" height="20" uuid="efb718a7-c479-4c4d-8d21-85fa21d8ba19"/>
+				<textFieldExpression><![CDATA[$F{servico}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="120" width="100" height="20" uuid="abd1b15f-1b10-48b6-abea-8f7ccc2b94b0"/>
+				<text><![CDATA[Data de Entrega]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="120" width="100" height="20" uuid="9569e297-a440-40e3-8b0b-57b649ff0223"/>
+				<textFieldExpression><![CDATA[$F{dataDeEntrega}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
